@@ -1,0 +1,112 @@
+.about {
+  padding: 30px 10%; /* Reduced padding to make it more compact */
+  background: linear-gradient(135deg, #f3f2f2, #fdfbfb);
+  color: #373636;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating Background Shapes - Darker Color for Visibility */
+.about::before,
+.about::after {
+  background: rgba(200, 200, 200, 0.1); /* Lighter, neutral color */
+  filter: blur(15px); /* Reduced blur */
+}
+
+
+.about::before {
+  top: 20%;
+  left: -40px;
+}
+
+.about::after {
+  bottom: 10%;
+  right: -40px;
+}
+
+/* About Title */
+.about-title {
+  font-size: 2rem; /* Slightly reduced */
+  font-weight: 650;
+  margin-bottom: 5px; /* Less margin for compact look */
+  margin-top: 5px; /* Less margin for compact look */
+  text-transform: capitalize;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(90deg, #0e0c0b, #0c0b0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  letter-spacing: 1px;
+  /* animation: glowEffect 1.5s infinite alternate ease-in-out; */
+}
+
+/* Animated Underline */
+.about-title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #2a2525;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  animation: underlineSlide 1s ease-in-out infinite alternate;
+}
+
+/* About Description */
+.about-description {
+  font-size: 1.2rem; /* Slightly reduced */
+  line-height: 1.6;
+  color: rgba(99, 5, 5, 0.85);
+  max-width: 750px;
+  margin-bottom: 15px; /* Reduced margin */
+  transition: transform 0.3s ease, color 0.3s ease;
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Hover Effect */
+.about-description:hover {
+  transform: translateX(5px);
+  color: #c19b79;
+}
+
+/* Key Animations */
+@keyframes glowEffect {
+  0% {
+    text-shadow: 0 0 5px rgba(252, 162, 83, 0.4);
+  }
+  100% {
+    text-shadow: 0 0 12px rgba(252, 162, 83, 0.9);
+  }
+}
+
+@keyframes underlineSlide {
+  0% {
+    width: 60px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about {
+    padding: 50px 8%;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-description {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,122 @@
+/* General Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: baseline;  /* Maintain space between the logo and the links */
+  /* align-items: center; */
+  padding: 15px 40px;  /* Reduced height for the navbar */
+  background: linear-gradient(135deg, #282c34, #3a3f47);  /* Match home background gradient */
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+  height: 60px; /* Set fixed height */
+  transform: translateX(-20px); /* Shift the entire navbar content slightly left */
+}
+
+/* Logo Styling */
+.navbar .logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fe6c6c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+}
+
+/* Neon Glow on Hover (Blue Color) */
+.navbar .logo:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 12px rgba(9, 10, 10, 0.8), 0 0 20px rgba(0, 136, 255, 0.6); /* Neon Blue */
+}
+/* Navbar Links Container */
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;  /* Adjusted gap between links */
+  
+ /* No margin left, keeping the space intact between the logo and links */ 
+ margin-left: auto;
+}
+
+/* Styling for the Navbar Items */
+.navbar .nav-links li {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left:10;
+  
+}
+
+/* Link Styling */
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px;
+  display: block;
+  transition: color 0.3s, transform 0.3s;
+  position: relative;
+  margin-right: 40px;
+  
+}
+
+/* Hover Effect on Links */
+.navbar .nav-links li a:hover {
+  color: #ff7e5f; /* Soft color to match home section theme */
+  transform: translateY(-4px);
+  border-bottom: 2px solid #ff7e5f;
+}
+
+/* Active Link Styling */
+.navbar .nav-links li a.active {
+  color: #ff7e5f; /* Golden color for active link */
+}
+
+/* Navbar for Small Screens */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .navbar .nav-links li a {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
+
+/* Home Section Styling */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 90px 20px; /* Adjusted padding for better spacing */
+  background: linear-gradient(135deg, #282c34, #3a3f47); /* Matches navbar background */
+  color: white;
+  margin-top: 60px; /* Prevent overlap with fixed navbar */
+} 
+/*    */
+
+/*  this is for overlppaing navabr and image section */
+.navbar {
+  height: 60px; /* Reduce height */
+  padding: 10px 30px; /* Reduce padding */
+}
+
+.home {
+  margin-top: 50px; /* Adjust to match navbar height */
+   min-height: 64vh; 
+}
+

@@ -1,0 +1,128 @@
+
+.projects {
+  padding: 3rem 5rem;
+  background: #1e1e1e;
+  color: white;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  color: #f98553;
+  font-weight: bold;
+  margin: 0;
+}
+
+.projects-description {
+  color: rgb(253, 194, 75);
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.projects-title {
+  font-size: 2.2rem;
+  margin: 0;
+  padding-bottom: 0.3rem;
+  color: #f98553;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Project Card */
+.project-card {
+  background: #2a2a2a;
+  padding: 1.1rem;
+  border-radius: 8px;
+  width: 40%; /* Adjusted width to half */
+  max-width: 300px; /* Prevents excessive stretching */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 190px;
+  justify-content: flex-start;
+  text-align: center;
+  margin-top: 0;
+  flex-grow: 1;
+}
+
+/* Project List */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Title */
+.project-card h3 {
+  font-size: 1.2rem; /* Further reduced font size */
+  font-weight: 700;
+  color: #f48617;
+  margin-bottom: 0.6rem;
+  min-height: 40px; /* Adjusted height proportionally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Description */
+.project-text {
+  font-size: 0.75rem; /* Further reduced font size */
+  margin-bottom: 0.6rem;
+  color: #c0c0c0;
+  text-align: center;
+  line-height: 1.4;
+  flex-grow: 1; /* Allows flexibility */
+  min-height: 60px; /* Adjusted height dynamically */
+}
+
+/* Tech Stack */
+.project-tech {
+  font-size: 0.75rem; /* Further reduced font size */
+  color: #f48617;
+  text-align: center;
+  margin-bottom: 0.6rem;
+  margin-top: 0;
+  min-height: auto;
+  padding: 3px;
+}
+
+/* Buttons */
+.project-links {
+  margin-top: 0.3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-links a {
+  flex: 1;
+  margin: 0 5px;
+  padding: 7px; /* Further reduced padding */
+  color: white;
+  background: #f48617;
+  border-radius: 5px; /* Adjusted border radius */
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.project-links a:hover {
+  background: #ff7e5f;
+  transform: scale(1.05);
+}
+
+.project-links a:first-child {
+  margin-left: 0;
+}
+
+.project-links a:last-child {
+  margin-right: 0;
+}

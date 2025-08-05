@@ -1,0 +1,101 @@
+/* Skills Section */
+.skills {
+  padding: 3rem 4rem; /* Reduced top and bottom padding */
+  background-color: transparent;
+  color: #333;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Heading */
+.skills h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, #f98553, #ff7b00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.3rem; /* Reduced bottom space */
+  margin-top: 0; /* Remove extra space above */
+  margin-bottom: 0.5rem; /* Reduce space below heading */
+}
+
+/* Elegant Underline Effect */
+.skills h2::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(45deg, #f98553, #ff7b00);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Skills List */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Smaller items */
+  justify-content: center;
+  gap: 0.8rem; /* Reduced space between items */
+  max-width: 700px;
+  margin: 0.5rem auto; /* Less margin to make section tighter */
+  padding: 0.3rem; /* Reduce padding */
+}
+
+/* Skill Item */
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem; /* Less padding inside each skill */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Skill Icon */
+.icon-wrapper {
+  font-size: 2.3rem; /* Slightly smaller icons */
+  transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+  display: inline-block;
+  margin-bottom: 0.2rem; /* Reduce bottom spacing */
+}
+
+/* Skill Name */
+.skill-name {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+  margin-top: 0.1rem; /* Reduce spacing */
+}
+
+/* Floating Animation on Hover */
+@keyframes longFloating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply Floating Effect on Hover */
+.skill:hover {
+  animation: longFloating 1s ease-in-out;
+}
+
+/* Reduce Zigzag Offset */
+.skill:nth-child(even) {
+  transform: translateY(5px); /* Further reduced offset */
+}

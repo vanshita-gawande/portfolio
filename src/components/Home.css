@@ -1,0 +1,106 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #282c34, #3a3f47);
+  color: white;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; /* Increase max-width for more space */
+  width: 100%;
+}
+
+.text-container {
+  max-width: 55%; /* Slightly larger text space */
+}
+
+.home h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.home .highlight {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e55b00;
+  transform: scale(1.05);
+}
+
+.cta-button svg {
+  margin-left: 8px;
+}
+
+/* Right side - Profile Image */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 45%; /* Move image more to the left */
+}
+
+.profile-img {
+  width: 320px; /* Increase image size */
+  height: auto;
+  border-radius: 50%;
+  box-shadow: none; /* Remove the orange glow */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect - Slight zoom (no glow) */
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* Glowing Animation (removed) */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-container, .image-container {
+    max-width: 100%;
+  }
+
+  .image-container {
+    margin-top: 20px;
+  }
+
+  .profile-img {
+    width: 250px; /* Resize image for mobile */
+  }
+}
