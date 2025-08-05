@@ -13,7 +13,7 @@ function Contact() {
 
       {/* Contact Info */}
       <p className="contact-info">
-        <FontAwesomeIcon icon={faEnvelope} className="icon" /> vanshitapatil01@gmail.com
+        <FontAwesomeIcon icon={faEnvelope} className="icon" /> vanshitagawande01@gmail.com
       </p>
       <p className="contact-info">
         <FontAwesomeIcon icon={faPhone} className="icon" /> 9699983645
